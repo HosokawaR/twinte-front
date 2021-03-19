@@ -27,7 +27,7 @@ export const moduleMap: { [key in string]: ModuleJa } = {
   FallC: "秋C",
 };
 
-export const moduleNum = (module: CourseModule): number =>
+export const modulesNum = (module: CourseModule): number =>
   modules.indexOf(module);
 export const moduleToJa = (module: CourseModule): ModuleJa =>
   moduleMap[module] ?? "春A";
